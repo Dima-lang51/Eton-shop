@@ -66,10 +66,11 @@ window.onload = function () {
 
   for (i = 0; i < color.length; i++) {
     color[i].addEventListener('click', function () {
-      var color_circle = this.querySelector('.circle');
+      var color_name = this.querySelector('.color-name');
 
       if (!this.classList.contains("active")) {
         this.classList.add("active");
+        color_name.classList.add("active");
       }
     });
   }
@@ -80,6 +81,8 @@ window.onload = function () {
     color_clear[i].addEventListener('click', function () {
       var color_btn = this.previousElementSibling;
       color_btn.classList.remove("active");
+      var color_name = color_btn.querySelector('.color-name');
+      color_name.classList.remove("active");
     });
   }
 

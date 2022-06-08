@@ -819,6 +819,7 @@ body {
 .header .menu-mb .mb .mb-col1 .filters-block__col1 .body-open {
   margin-left: 3px;
   overflow: hidden;
+  max-height: 0;
 }
 
 .header .menu-mb .mb .mb-col1 .filters-block__col1 .body-open > p {
@@ -1095,7 +1096,7 @@ body {
 }
 
 .main .catalog {
-  margin-bottom: 191px;
+  margin-bottom: 190px;
 }
 
 .main .catalog__title {
@@ -1281,19 +1282,6 @@ body {
 
 .main .catalog__main .catalog-main__filtres .filters-block__price {
   margin-bottom: 98px;
-  /*
-  [slider] > div > [sign]:after {
-    position: absolute;
-    content: '';
-    left: 0;
-    border-radius: 16px;
-    top: 19px;
-    border-left: 14px solid transparent;
-    border-right: 14px solid transparent;
-    border-top-width: 16px;
-    border-top-style: solid;
-    border-top-color: #d02128;
-  }*/
 }
 
 .main .catalog__main .catalog-main__filtres .filters-block__price .price__range {
@@ -1598,6 +1586,7 @@ body {
 .main .catalog__main .catalog-main__filtres .filters-block__color .button__color .color-name {
   margin-left: 22px;
   margin-right: 17px;
+  color: #7E838C;
 }
 
 .main .catalog__main .catalog-main__filtres .filters-block__color .button__color .circle::before {
@@ -1652,6 +1641,10 @@ body {
   border: 2px solid #fff;
   width: 14px;
   height: 14px;
+}
+
+.main .catalog__main .catalog-main__filtres .filters-block__color .color-name.active {
+  color: #2B2E34;
 }
 
 .main .catalog__main .catalog-main__filtres .filters-block__color .button__color.active + .close__btn {
@@ -1902,6 +1895,7 @@ body {
 }
 
 .main .catalog__main .catalog-main__sort_and_items .more__card-hr {
+  display: none;
   position: relative;
   margin: auto;
   height: 2px;
@@ -2437,6 +2431,11 @@ body {
     display: none;
   }
 
+  .main .catalog__main .catalog-main__filtres .filters-block__price [slider] > div > [thumb] {
+    height: 22px;
+    width: 4px;
+  }
+
   .main .catalog__main .catalog-main__filtres .filters-block__color .button__color .circle {
     width: 17px;
     height: 17px;
@@ -2450,10 +2449,6 @@ body {
   .main .catalog__main .catalog-main__filtres .filters-block__color .button__color.active > span::before {
     width: 17px;
     height: 17px;
-  }
-
-  .main .catalog__main .catalog-main__filtres .filters-block__color .button__color.active + .color-name {
-    color: #2B2E34;
   }
 
   .main .catalog__main .catalog-main__filtres {
@@ -2747,8 +2742,8 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 25px;
-    top: -5px;
-    left: 2px;
+    top: -2px;
+    left: 1px;
   }
 
   .main .catalog__main .catalog-main__filtres .block__price .left-sum #value {
@@ -3026,7 +3021,6 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
-    color: #7E838C;
   }
 
   .main .catalog__main .catalog-main__filtres .block__color .block__color-circle .close__btn {
@@ -3440,6 +3434,10 @@ body {
     font-size: 15px;
     line-height: 28px;
     color: #2B2E34;
+  }
+
+  .main .catalog__main .catalog-main__sort_and_items .more__card-hr {
+    display: block;
   }
 
   .main .catalog__main {
